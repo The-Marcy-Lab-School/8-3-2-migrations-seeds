@@ -11,6 +11,7 @@ Migration files are a "formal" way to define a database schema and to update it 
 
 **Migrations Commands**:
 * `npx knex migrate:make migration_name` - create an update to your schema
+* `npx knex migrate:down` - rewind/undo the last migration
 * `npx knex migrate:rollback` - rewind/undo your migrations
 * `npx knex migrate:latest` - run your migrations
 
