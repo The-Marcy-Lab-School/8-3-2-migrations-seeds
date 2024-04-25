@@ -23,8 +23,12 @@ Migration files are a "formal" way to define a database schema and to update it 
 
 ## Setup
 
-* Create a database called `migrations-seeds-practice`
-* Modify the `knexfile.js` to use this database
+* Create a database called `migrations_seeds_practice`
+* Create a new folder called `migrations-practice` and `cd` into it
+* Install dependencies: `npm i knex pg`
+* Create a `knexfile.js` file: `npx knex init`
+* Modify the `knexfile.js` to use your `migrations_seeds_practice` database
+* Create your first migration file: `npx knex migrate:make init`
 
 ## Migrations & Seeds: Why do we need them?
 
@@ -44,7 +48,7 @@ Migrations are special files that run queries on your DB to perform structural u
 
 ### Creating New Migrations
 
-Run the command `npx knex migrate:make init` and you'll get something like: `20240417181815_init` located **in your new `/migrations` folder**. 
+Running the command `npx knex migrate:make init` will generate a file like: `20240417181815_init` located **in your new `/migrations` folder**. 
 * That bit at the front is a timecode that the migration uses to track what migrations exist. 
 * Every time you want to create another migration: `npx knex migrate:make example_file`. 
 
