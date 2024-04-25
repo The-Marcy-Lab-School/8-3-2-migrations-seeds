@@ -28,6 +28,18 @@ Migration files are a "formal" way to define a database schema and to update it 
 * Install dependencies: `npm i knex pg`
 * Create a `knexfile.js` file: `npx knex init`
 * Modify the `knexfile.js` to use your `migrations_seeds_practice` database
+
+```js
+  development: {
+    client: 'pg',
+    connection: {
+      user: 'postgres', // unless you want to use a different user
+      password: 'postgres', // unless you changed your password
+      database: 'migrations_seeds_practice', 
+    }
+  },
+```
+
 * Create your first migration file: `npx knex migrate:make init`
 
 ## Migrations & Seeds: Why do we need them?
