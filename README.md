@@ -41,6 +41,7 @@ Migration files are a "formal" way to define a database schema and to update it 
 ```
 
 * Create your first migration file: `npx knex migrate:make init`
+* Read about migrations below!
 
 ## Migrations & Seeds: Why do we need them?
 
