@@ -8,6 +8,7 @@ Migration files are a "formal" way to define a database schema and to update it 
 
 * **Migration File** - a file defining a change to the structure of your database (creating, updating, deleting tables)
 * **Seed File** - a file for inserting an initial dataset into a database
+* **Rollback** - the act of reverting a system to a previous state 
 
 **Migrations Commands**:
 * `npx knex migrate:make migration_name` - create an update to your schema
